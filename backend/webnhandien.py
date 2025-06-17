@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO
 app = Flask(__name__, template_folder="../frontend/templates")
 model = YOLO("yl1.pt")
-model.model.names = {
+model.model.names = {           #ghi đè tên các lớp do lỗi font chữ
     0: "Bia Cung",
     1: "Thuy Tinh",
     2: "Kim Loai",
