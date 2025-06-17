@@ -17,7 +17,7 @@ Mô tả ngắn gọn: Đây là một ứng dụng nhận diện rác thải b�
 yolo11-project/
 ├── backend/
 │   ├── app.py          # Flask server
-│   └── yolo11n.pt      # Trained YOLOv11 model
+│   └── yolo11n.pt      # mô hình đã train có thể thay bằng mô hình train khác
 ├── frontend/
 │   ├── templates/
 │   │   └── index.html
