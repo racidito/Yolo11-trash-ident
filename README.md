@@ -9,7 +9,6 @@ Mô tả ngắn gọn: Đây là một ứng dụng nhận diện rác thải b�
 - Nhận diện rác qua webcam
 - Sử dụng mô hình YOLOv11 tối ưu.
 - Giao diện web đơn giản: bật/tắt nhận diện nhanh.
-- Tùy biến nhãn tiếng Việt cho từng loại vật thể.
 ---
 ## Cấu trúc thư mục
 
