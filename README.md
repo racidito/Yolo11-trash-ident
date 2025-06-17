@@ -4,14 +4,14 @@ Mô tả ngắn gọn: Đây là một ứng dụng nhận diện rác thải b�
 
 ---
 
-## 🚀 Tính năng chính
+## Tính năng chính
 
 - Nhận diện rác qua webcam
 - Sử dụng mô hình YOLOv11 tối ưu.
 - Giao diện web đơn giản: bật/tắt nhận diện nhanh.
 - Tùy biến nhãn tiếng Việt cho từng loại vật thể.
 ---
-## 🏗️ Cấu trúc thư mục
+## Cấu trúc thư mục
 
 ```bash
 yolo11-project/
