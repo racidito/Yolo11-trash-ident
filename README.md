@@ -21,8 +21,7 @@ yolo11-project/
 ├── frontend/
 │   ├── templates/
 │   │   └── index.html
-│   └── static/
+│   └── static/   # có thể thêm để web thêm phong cách
 │       └── css/
 │           └── style.css
 ├── requirements.txt
-  có thể tùy chỉnh css để phù hợp với giao diện web mong muốn 
