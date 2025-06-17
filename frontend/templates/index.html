@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhận Diện Camera</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #769ddb;        
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .btn {
+            background-color: #4f6085;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 9999px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #929ec0;
+        }
+
+        #video {
+            margin-top: 30px;
+            border-radius: 12px;
+            max-width: 90vw;
+            max-height: 80vh;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn" class="btn" onclick="toggleCamera()">Bật nhận diện</button>
+    <img id="video" src="loading.png" alt="Loading...">
+    
+    <script>
+        let isRunning = false;
+
+        function toggleCamera() {
+            const video = document.getElementById("video");
+            const btn = document.getElementById("toggleBtn");
+
+            if (!isRunning) {
+                video.style.display = "block";
+                video.src = "{{ url_for('static', filename='img/loading.png') }}";
+                btn.innerText = "Tắt nhận diện";
+                isRunning = true;
+
+                setTimeout(() => {
+                    video.src = "/video_feed";
+                }, 500);
+
+            } else {
+                video.style.display = "none";
+                video.src = "";
+                btn.innerText = "Bật nhận diện";
+                isRunning = false;
+            }
+        }
+    </script>
+</body>
+</html>
