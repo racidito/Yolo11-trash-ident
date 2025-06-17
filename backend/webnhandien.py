@@ -7,7 +7,7 @@ model.model.names = {           #ghi đè tên các lớp do lỗi font chữ,th
     0: "Bia Cung",
     1: "Thuy Tinh",
     2: "Kim Loai",
-    3: "",
+    3: "PE",
     4: "Cac loai khac",
     5: "Nhua",
     6: "Giay",
